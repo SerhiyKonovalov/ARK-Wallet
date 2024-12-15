@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700);
 * {
   padding: 0;
   margin: 0;
@@ -444,7 +444,7 @@ body::-webkit-scrollbar-thumb:hover {
 .footer {
   background: #212225;
   color: #fff;
-  padding-block: 60px 30px
+  padding-block: 3.75rem 2.5rem
 }
 .footer__container {
   max-width: 56.25rem
@@ -647,37 +647,6 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05)
 }
-.blockchain {
-  padding-block: 6.25rem
-}
-.blockchain__container {
-  display: flex;
-  -webkit-column-gap: 64px;
-  -moz-column-gap: 64px;
-  column-gap: 64px;
-  row-gap: 32px
-}
-.blockchain__image {
-  border-radius: 6.25rem;
-  flex: 0 1 40%;
-  max-height: 43.75rem;
-  overflow: hidden
-}
-.blockchain__image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  transition: all .7s
-}
-.blockchain__image img:hover {
-  -webkit-transform: scale(1.04);
-  transform: scale(1.04)
-}
-.blockchain__content {
-  flex: 0 1 60%;
-  align-self: center
-}
 .features {
   display: grid;
   justify-items: center;
@@ -741,7 +710,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .evolving__image {
   border-radius: .9375rem;
-  flex: 0 1 55%;
+  flex: 0 1 50%;
   height: 25rem;
   overflow: hidden
 }
@@ -757,7 +726,7 @@ body::-webkit-scrollbar-thumb:hover {
   transform: scale(1.05)
 }
 .evolving__content {
-  flex: 0 1 45%;
+  flex: 0 1 50%;
   align-self: center
 }
 .start {
@@ -795,15 +764,46 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all .3s;
   width: 1.875rem
 }
-.questions {
+.blockchain {
+  padding-block: 6.25rem
+}
+.blockchain__container {
+  display: flex;
+  -webkit-column-gap: 64px;
+  -moz-column-gap: 64px;
+  column-gap: 64px;
+  row-gap: 32px
+}
+.blockchain__image {
+  border-radius: .9375rem;
+  flex: 0 1 50%;
+  height: 25rem;
+  overflow: hidden
+}
+.blockchain__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: all .7s
+}
+.blockchain__image img:hover {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04)
+}
+.blockchain__content {
+  flex: 0 1 50%;
+  align-self: center
+}
+.how-to {
   background: #f2f7f8;
   padding-block: 5.3125rem 6.25rem
 }
-.questions__container {
+.how-to__container {
   color: #212225;
   max-width: 50rem
 }
-.questions__title {
+.how-to__title {
   text-align: center
 }
 summary::-webkit-details-marker {
@@ -812,16 +812,16 @@ summary::-webkit-details-marker {
 summary {
   list-style: none
 }
-.spollers-questions {
+.spollers-how-to {
   display: grid
 }
-.spollers-questions__item {
+.spollers-how-to__item {
   transition: all .2s
 }
-.spollers-questions__item:not(:last-child) {
+.spollers-how-to__item:not(:last-child) {
   border-bottom: .0625rem solid #cecece
 }
-.spollers-questions__title {
+.spollers-how-to__title {
   padding-block: 1.5625rem;
   border-radius: .625rem;
   display: flex;
@@ -832,37 +832,49 @@ summary {
   font-weight: 500;
   line-height: 1.4;
   cursor: pointer;
-  transition: all .2s;
+  transition: color .2s,padding .4s;
   position: relative
 }
-.spollers-questions__title::after {
+.spollers-how-to__title::after {
   content: "";
   background: url(../img/icons/plus.svg) 0/cover no-repeat;
   width: 1.875rem;
   height: 1.875rem;
   transition: all .4s
 }
-.spollers-questions__title:hover {
+.spollers-how-to__title:hover {
   color: #de5846
 }
-.spollers-questions__title._spoller-active {
-  padding-block: 1.5625rem .625rem;
+.spollers-how-to__title._spoller-active {
+  padding-block: 1.5625rem .9375rem;
   color: #de5846;
   border-radius: .625rem .625rem 0 0
 }
-.spollers-questions__title._spoller-active::after {
+.spollers-how-to__title._spoller-active::after {
   -webkit-transform: rotate(0);
   transform: rotate(0);
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg)
 }
-.spollers-questions__body {
+.spollers-how-to__body {
   border-radius: 0 0 .625rem .625rem;
   padding: 0 2.5rem 1.5625rem 0;
   line-height: 1.6
 }
-.spollers-questions__body>p:not(:last-child) {
-  margin-bottom: .9375rem
+.spollers-how-to__body ul {
+  padding-left: 1.25rem
+}
+.spollers-how-to__body li {
+  list-style: square
+}
+.spollers-how-to__body li strong {
+  font-weight: 500
+}
+.spollers-how-to__body li:not(:last-child) {
+  margin-bottom: .1875rem
+}
+.spollers-how-to__body>div>p:not(:last-child) {
+  margin-bottom: .625rem
 }
 .docs {
   padding-block: 11.25rem 6.25rem
@@ -890,6 +902,9 @@ summary {
 }
 .docs__article--last:not(:last-child) {
   margin-bottom: 4.375rem
+}
+.docs__article strong {
+  font-weight: 600
 }
 .docs__title.title {
   display: flex;
@@ -940,6 +955,9 @@ summary {
 .docs__list-label--bigger {
   font-size: 1.25rem;
   font-weight: 500
+}
+.docs__ul:not(:last-child) {
+  margin-bottom: 1.25rem
 }
 .docs__ul--circle {
   padding-left: 1.0625rem
