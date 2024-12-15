@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=1230px, initial-scale=1.0">
 	<meta name="author" content="arkwallet.io">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241214230755">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241215161150">
 	<link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="favicon.ico">
 	<link rel="icon" type="image/webp" sizes="16x16" href="img/favicons/16x16.webp">
 	<link rel="icon" type="image/webp" sizes="32x32" href="img/favicons/32x32.webp">
@@ -47,16 +47,19 @@
 					<div class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="home.html#about" class="menu__link" data-goto=".about" data-goto-header>Ecosystem</a>
+								<a href="home.html#explore" class="menu__link" data-goto=".explore" data-goto-header>Explore</a>
 							</li>
 							<li class="menu__item">
 								<a href="home.html#features" class="menu__link" data-goto=".features" data-goto-header>Features</a>
 							</li>
 							<li class="menu__item">
+								<a href="home.html#blockchain" class="menu__link" data-goto=".blockchain" data-goto-header>Blockchain</a>
+							</li>
+							<li class="menu__item">
 								<a href="home.html#evolving" class="menu__link" data-goto=".evolving" data-goto-header>Evolving</a>
 							</li>
 							<li class="menu__item">
-								<a href="home.html#upgraded" class="menu__link" data-goto=".upgraded" data-goto-header>Upgraded</a>
+								<a href="home.html#questions" class="menu__link" data-goto=".questions" data-goto-header>Faq</a>
 							</li>
 							<li class="menu__item">
 								<a href="docs.html" class="menu__link">Docs</a>
@@ -91,14 +94,104 @@
 					</div>
 				</div>
 			</section>
-			<article class="about" data-watch="navigator" itemscope itemtype="https://schema.org/Article">
-				<div class="about__container">
-					<div class="about__image">
-						<img src="img/about/image.webp" alt="ARK Wallet Image" itemprop="image">
+			<article class="explore" data-watch="navigator" itemscope itemtype="https://schema.org/Article">
+				<div class="explore__container">
+					<div class="explore__content">
+						<div class="explore__header header-main">
+							<h2 class="header-main__title" itemprop="headline">One Wallet for All Your Needs</h2>
+							<div class="header-main__text" itemprop="description">
+								<p>
+									Ark Wallet is a wallet created specifically to deliver a seamless and efficient desktop experience. As a dedicated app for Windows and macOS, it ensures a secure and reliable experience, keeping you connected to the blockchain at all times. With offline storage of private keys and seamless integration with ARK’s ecosystem, it’s built for those who value performance and simplicity. Ark Wallet isn’t just an upgrade—it’s the best way to manage your digital assets.
+								</p>
+							</div>
+						</div>
 					</div>
-					<div class="about__content">
-						<div class="about__header header-main">
-							<h2 class="header-main__title" itemprop="headline"><span>What is</span> ARK Blockchain?</h2>
+					<div class="explore__image">
+						<img src="img/explore/image.webp" alt="ARK Wallet Image" itemprop="image">
+					</div>
+				</div>
+			</article>
+			<section class="features" data-watch="navigator">
+				<div class="features__container">
+					<h2 class="features__title title" itemprop="headline">Core <span>Features</span></h2>
+					<div class="features__items">
+						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
+							<div class="item-features__icon">
+								<img src="img/features/01.svg" alt="Lightweight icon" itemprop="image">
+							</div>
+							<div class="item-features__body">
+								<h4 class="item-features__title" itemprop="headline">Multi-Asset Support</h4>
+								<div class="item-features__text" itemprop="description">
+									<p>Easily manage ARK-based tokens in one place, simplifying your interaction with multiple assets across the ecosystem</p>
+								</div>
+							</div>
+						</article>
+						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
+							<div class="item-features__icon">
+								<img src="img/features/02.svg" alt="High security icon" itemprop="image">
+							</div>
+							<div class="item-features__body">
+								<h4 class="item-features__title" itemprop="headline">Real-Time Synchronization</h4>
+								<div class="item-features__text" itemprop="description">
+									<p>Keep your wallet up-to-date with live blockchain data for accurate balances, transaction details, and network status</p>
+								</div>
+							</div>
+						</article>
+						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
+							<div class="item-features__icon">
+								<img src="img/features/03.svg" alt="Private keys icon" itemprop="image">
+							</div>
+							<div class="item-features__body">
+								<h4 class="item-features__title" itemprop="headline">Delegated Voting Tools</h4>
+								<div class="item-features__text" itemprop="description">
+									<p>Participate in the network's governance by voting for delegates directly through the wallet, with real-time updates</p>
+								</div>
+							</div>
+						</article>
+						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
+							<div class="item-features__icon">
+								<img src="img/features/04.svg" alt="Hardware wallet icon" itemprop="image">
+							</div>
+							<div class="item-features__body">
+								<h4 class="item-features__title" itemprop="headline">Built-In Transaction Explorer </h4>
+								<div class="item-features__text" itemprop="description">
+									<p>Track your transactions with detailed insights, including timestamps, confirmations, and associated fees</p>
+								</div>
+							</div>
+						</article>
+						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
+							<div class="item-features__icon">
+								<img src="img/features/05.svg" alt="Cross-platform icon" itemprop="image">
+							</div>
+							<div class="item-features__body">
+								<h4 class="item-features__title" itemprop="headline">Enhanced Privacy and Security </h4>
+								<div class="item-features__text" itemprop="description">
+									<p>All sensitive data, including private keys, is securely stored on your device, ensuring full control over your funds</p>
+								</div>
+							</div>
+						</article>
+						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
+							<div class="item-features__icon">
+								<img src="img/features/06.svg" alt="Collaborative Functionality icon" itemprop="image">
+							</div>
+							<div class="item-features__body">
+								<h4 class="item-features__title" itemprop="headline">Cross-Platform Compatibility </h4>
+								<div class="item-features__text" itemprop="description">
+									<p>Enjoy a seamless experience on both macOS and Windows, designed for performance and ease of use</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<article class="blockchain" data-watch="navigator" itemscope itemtype="https://schema.org/Article">
+				<div class="blockchain__container">
+					<div class="blockchain__image">
+						<img src="img/blockchain/image.webp" alt="ARK Wallet Image" itemprop="image">
+					</div>
+					<div class="blockchain__content">
+						<div class="blockchain__header header-main">
+							<h2 class="header-main__title" itemprop="headline">What is ARK <span>Blockchain</span>?</h2>
 							<div class="header-main__text" itemprop="description">
 								<p>
 									ARK Blockchain is a flexible platform designed to simplify blockchain technology for developers and users. Its modular architecture and Delegated Proof-of-Stake (DPoS) consensus provide a scalable and efficient foundation for building custom blockchains and applications.
@@ -111,97 +204,6 @@
 								<li>Tools for quick blockchain deployment</li>
 							</ul>
 						</div>
-					</div>
-				</div>
-			</article>
-			<section class="features" data-watch="navigator">
-				<div class="features__container">
-					<h2 class="features__title title" itemprop="headline">Core <span>Features</span></h2>
-					<div class="features__items">
-						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
-							<div class="item-features__icon">
-								<img src="img/features/ark.svg" alt="Lightweight icon" itemprop="image">
-							</div>
-							<div class="item-features__body">
-								<h4 class="item-features__title" itemprop="headline">Multi-Asset Support</h4>
-								<div class="item-features__text" itemprop="description">
-									<p>Easily manage ARK-based tokens in one place, simplifying your interaction with multiple assets across the ecosystem</p>
-								</div>
-							</div>
-						</article>
-						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
-							<div class="item-features__icon">
-								<img src="img/features/ark.svg" alt="High security icon" itemprop="image">
-							</div>
-							<div class="item-features__body">
-								<h4 class="item-features__title" itemprop="headline">Real-Time Synchronization</h4>
-								<div class="item-features__text" itemprop="description">
-									<p>Keep your wallet up-to-date with live blockchain data for accurate balances, transaction details, and network status</p>
-								</div>
-							</div>
-						</article>
-						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
-							<div class="item-features__icon">
-								<img src="img/features/ark.svg" alt="Private keys icon" itemprop="image">
-							</div>
-							<div class="item-features__body">
-								<h4 class="item-features__title" itemprop="headline">Delegated Voting Tools</h4>
-								<div class="item-features__text" itemprop="description">
-									<p>Participate in the network's governance by voting for delegates directly through the wallet, with real-time updates</p>
-								</div>
-							</div>
-						</article>
-						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
-							<div class="item-features__icon">
-								<img src="img/features/ark.svg" alt="Hardware wallet icon" itemprop="image">
-							</div>
-							<div class="item-features__body">
-								<h4 class="item-features__title" itemprop="headline">Built-In Transaction Explorer </h4>
-								<div class="item-features__text" itemprop="description">
-									<p>Track your transactions with detailed insights, including timestamps, confirmations, and associated fees</p>
-								</div>
-							</div>
-						</article>
-						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
-							<div class="item-features__icon">
-								<img src="img/features/ark.svg" alt="Cross-platform icon" itemprop="image">
-							</div>
-							<div class="item-features__body">
-								<h4 class="item-features__title" itemprop="headline">Enhanced Privacy and Security </h4>
-								<div class="item-features__text" itemprop="description">
-									<p>All sensitive data, including private keys, is securely stored on your device, ensuring full control over your funds</p>
-								</div>
-							</div>
-						</article>
-						<article class="features__item item-features" itemscope itemtype="https://schema.org/Article">
-							<div class="item-features__icon">
-								<img src="img/features/ark.svg" alt="Collaborative Functionality icon" itemprop="image">
-							</div>
-							<div class="item-features__body">
-								<h4 class="item-features__title" itemprop="headline">Cross-Platform Compatibility </h4>
-								<div class="item-features__text" itemprop="description">
-									<p>Enjoy a seamless experience on both macOS and Windows, designed for performance and ease of use</p>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-			<article class="evolving" data-watch="navigator" itemscope itemtype="https://schema.org/Article">
-				<div class="evolving__container">
-					<div class="evolving__content">
-						<div class="evolving__header header-main">
-							<h2 class="header-main__title" itemprop="headline">Ark Wallet: <span>Always Evolving</span></h2>
-							<div class="header-main__text" itemprop="description">
-								<p>
-									Ark Wallet is constantly evolving to meet the needs of both developers and everyday users. With each update, we refine performance, enhance security, and expand features to ensure seamless interaction with the Ark blockchain. Our focus on simplicity and modularity makes Ark Wallet an accessible yet powerful tool for managing your digital assets and participating in a decentralized ecosystem
-								</p>
-							</div>
-							<a href="#" class="header-main__button button">Learn more</a>
-						</div>
-					</div>
-					<div class="evolving__image">
-						<img src="img/evolving/image.webp" alt="ARK Wallet Image" itemprop="image">
 					</div>
 				</div>
 			</article>
@@ -218,27 +220,76 @@
 						<a href="docs.html" class="start__link">
 							<img src="img/icons/document-white.svg" alt="Document icon">
 						</a>
-						<a href="#" class="start__button button button--white">Get Started</a>
+						<a href="download.html" class="start__button button button--white">Get Started</a>
 					</div>
 				</div>
 			</div>
-			<article class="upgraded" data-watch="navigator" itemscope itemtype="https://schema.org/Article">
-				<div class="upgraded__container">
-					<div class="upgraded__content">
-						<div class="upgraded__header header-main">
-							<h2 class="header-main__title" itemprop="headline">One Wallet for All Your Needs</h2>
+			<article class="evolving" data-watch="navigator" itemscope itemtype="https://schema.org/Article">
+				<div class="evolving__container">
+					<div class="evolving__content">
+						<div class="evolving__header header-main">
+							<h2 class="header-main__title" itemprop="headline">Ark Wallet <br><span>Always Evolving</span></h2>
 							<div class="header-main__text" itemprop="description">
 								<p>
-									Ark Wallet is a wallet created specifically to deliver a seamless and efficient desktop experience. As a dedicated app for Windows and macOS, it ensures a secure and reliable experience, keeping you connected to the blockchain at all times. With offline storage of private keys and seamless integration with ARK’s ecosystem, it’s built for those who value performance and simplicity. Ark Wallet isn’t just an upgrade—it’s the best way to manage your digital assets.
+									Ark Wallet is constantly evolving to meet the needs of both developers and everyday users. With each update, we refine performance, enhance security, and expand features to ensure seamless interaction with the Ark blockchain. Our focus on simplicity and modularity makes Ark Wallet an accessible yet powerful tool for managing your digital assets and participating in a decentralized ecosystem
 								</p>
 							</div>
 						</div>
 					</div>
-					<div class="upgraded__image">
-						<img src="img/upgraded/image.svg" alt="ARK Wallet Image" itemprop="image">
+					<div class="evolving__image">
+						<img src="img/evolving/image.webp" alt="ARK Wallet Image" itemprop="image">
 					</div>
 				</div>
 			</article>
+			<section class="questions" data-watch="navigator" itemscope itemtype="https://schema.org/FAQPage">
+				<div class="questions__container">
+					<h2 class="questions__title title" itemprop="headline"><span>F</span>requently <span>A</span>sked <span>Q</span>uestions</h2>
+					<div data-spollers data-one-spoller data-spollers-speed="400" class="questions__spollers spollers-questions">
+						<details class="spollers-questions__item" data-open itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-questions__title" itemprop="name">Lorem ipsum dolor sit amet consectetur dolor?</summary>
+							<div class="spollers-questions__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae distinctio accusamus totam quos quam consectetur, animi ab dolorem et commodi aperiam fuga</p>
+							</div>
+						</details>
+						<details class="spollers-questions__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-questions__title" itemprop="name">Lorem ipsum dolor sit amet ?</summary>
+							<div class="spollers-questions__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae distinctio accusamus totam quos quam consectetur, animi ab dolorem et commodi aperiam fuga</p>
+							</div>
+						</details>
+						<details class="spollers-questions__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-questions__title" itemprop="name">Lorem ipsum dolor sit amet consectetur dolor?</summary>
+							<div class="spollers-questions__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae distinctio accusamus totam quos quam consectetur, animi ab dolorem et commodi aperiam fuga</p>
+							</div>
+						</details>
+						<details class="spollers-questions__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-questions__title" itemprop="name">Lorem ipsum dolor sit amet ?</summary>
+							<div class="spollers-questions__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae distinctio accusamus totam quos quam consectetur, animi ab dolorem et commodi aperiam fuga</p>
+							</div>
+						</details>
+						<details class="spollers-questions__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-questions__title" itemprop="name">Lorem ipsum dolor sit amet consectetur dolor?</summary>
+							<div class="spollers-questions__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae distinctio accusamus totam quos quam consectetur, animi ab dolorem et commodi aperiam fuga</p>
+							</div>
+						</details>
+						<details class="spollers-questions__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-questions__title" itemprop="name">Lorem ipsum dolor sit amet?</summary>
+							<div class="spollers-questions__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae distinctio accusamus totam quos quam consectetur, animi ab dolorem et commodi aperiam fuga</p>
+							</div>
+						</details>
+						<details class="spollers-questions__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-questions__title" itemprop="name">Lorem ipsum dolor sit amet consectetur dolor?</summary>
+							<div class="spollers-questions__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae distinctio accusamus totam quos quam consectetur, animi ab dolorem et commodi aperiam fuga</p>
+							</div>
+						</details>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -251,35 +302,21 @@
 						<div class="body-footer__text text">
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
 						</div>
-						<a href="docs.html" target="_blank" class="contacts-footer__link contacts-footer__link_docs">Documentation</a>
+						<a href="docs.html" class="contacts-footer__link contacts-footer__link_docs">Documentation</a>
 					</div>
 					<div class="body-footer__column body-footer__column_full">
 						<nav class="body-footer__menu menu-footer">
 							<div class="menu-footer__column">
-								<div class="menu-footer__title">Pages</div>
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Lorem</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Lorem</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Lorem</a>
-									</li>
-								</ul>
-							</div>
-							<div class="menu-footer__column">
 								<div class="menu-footer__title">Important</div>
 								<ul class="menu-footer__list">
 									<li class="menu-footer__item">
-										<a href="#" target="_blank" class="menu-footer__link">Lorem ipsum</a>
+										<a href="privacy-policy.html" class="menu-footer__link">Privacy Policy</a>
 									</li>
 									<li class="menu-footer__item">
-										<a href="#" target="_blank" class="menu-footer__link">Lorem ipsum</a>
+										<a href="terms-of-use.html" class="menu-footer__link">Terms of Use</a>
 									</li>
 									<li class="menu-footer__item">
-										<a href="#" target="_blank" class="menu-footer__link">Lorem ipsum</a>
+										<a href="#" class="menu-footer__link">Lorem ipsum</a>
 									</li>
 								</ul>
 							</div>
@@ -312,7 +349,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241214230755"></script>
+	<script src="js/app.min.js?_v=20241215161150"></script>
 </body>
 
 </html>
