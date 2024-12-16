@@ -664,13 +664,13 @@ body::-webkit-scrollbar-thumb:hover {
 .features__items {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 1.875rem 2.5rem
+  gap: 1.875rem
 }
 .item-features {
   display: flex;
   align-items: start;
   gap: 1.25rem;
-  padding: 1.5625rem 1.25rem;
+  padding: 1.5625rem;
   border-radius: .9375rem;
   transition: all .3s
 }
@@ -979,92 +979,6 @@ summary {
   list-style: circle inside;
   padding-left: 1.25rem
 }
-.docs-info:not(:last-child) {
-  padding-block: .625rem 4.375rem
-}
-.docs-info__container {
-  max-width: 75rem;
-  display: flex;
-  row-gap: 32px
-}
-.docs-info__container-second {
-  flex-direction: row-reverse
-}
-.docs-info__items {
-  flex: 1 1 auto;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px
-}
-.docs-info__items-second {
-  padding-right: 0;
-  padding-left: 32px
-}
-.docs-info__item {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  box-shadow: 0 0 .9375rem rgba(168,168,168,.2);
-  border-radius: .9375rem;
-  transition: all .2s
-}
-.docs-info__item:hover {
-  box-shadow: 0 0 .9375rem rgba(168,168,168,.4)
-}
-.docs-info__icon {
-  margin-bottom: 22px
-}
-.docs-info__icon img {
-  width: 55px
-}
-.docs-info__title {
-  font-size: 20px;
-  font-weight: 500
-}
-.docs-info__title a {
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: all .2s
-}
-.docs-info__title a:hover {
-  text-decoration-color: #000
-}
-.docs-info__title:not(:last-child) {
-  margin-bottom: 15px
-}
-.docs-info__text {
-  font-size: 1rem;
-  flex-grow: 1;
-  line-height: 1.5
-}
-.docs-info__text:not(:last-child) {
-  margin-bottom: 1.25rem
-}
-.docs-info__link {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #de5846;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: all .2s
-}
-.docs-info__link:hover {
-  text-decoration-color: #de5846
-}
-.docs-info__image {
-  align-self: flex-end;
-  flex: 0 0 38%;
-  overflow: hidden;
-  border-radius: 1.5625rem
-}
-.docs-info__image img {
-  max-width: 100%;
-  transition: all .7s
-}
-.docs-info__image img:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05)
-}
 .download {
   padding-block: 10.625rem 6.875rem;
   color: #fff;
@@ -1118,7 +1032,7 @@ summary {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(33,34,37,.94)
+  background: rgba(33,34,37,.9)
 }
 .item-download {
   transition: all .3s
@@ -1211,4 +1125,7 @@ summary {
 }
 .block-update-history__item:not(:last-child) {
   margin-bottom: .625rem
+}
+.docs__image--smaller {
+  height: 21.875rem
 }
