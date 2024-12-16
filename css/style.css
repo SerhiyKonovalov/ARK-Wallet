@@ -668,7 +668,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .item-features {
   display: flex;
-  align-items: start;
+  align-items: cta;
   gap: 1.25rem;
   padding: 1.5625rem;
   border-radius: .9375rem;
@@ -729,38 +729,38 @@ body::-webkit-scrollbar-thumb:hover {
   flex: 0 1 50%;
   align-self: center
 }
-.start {
+.cta {
   background: #e26e5e;
   padding-block: 2.5rem
 }
-.start__container {
+.cta__container {
   display: flex;
   align-items: center;
   gap: 3.125rem;
   justify-content: center
 }
-.start__logo img {
+.cta__logo img {
   width: 3.75rem
 }
-.start__actions {
+.cta__actions {
   display: flex;
   align-items: center;
   gap: .9375rem
 }
-.start__link {
+.cta__link {
   border-radius: .9375rem;
   border: .125rem solid #fff;
   padding: .625rem;
   transition: all .3s
 }
-.start__link:hover {
+.cta__link:hover {
   border: .125rem solid #7e7e7e
 }
-.start__link:hover img {
+.cta__link:hover img {
   -webkit-transform: scale(1.12);
   transform: scale(1.12)
 }
-.start__link img {
+.cta__link img {
   transition: all .3s;
   width: 1.875rem
 }
